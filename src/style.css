@@ -6,6 +6,10 @@
   margin: 0;
 }
 
+:root {
+  --bgColor: #DBDBDB; /* #3C3C3C */
+}
+
 /* animations */
 @keyframes fadeIn {
   from {
@@ -15,10 +19,6 @@
   to {
     opacity: 1;
   }
-}
-
-:root {
-  --bgColor: #DBDBDB; /* #3C3C3C */
 }
 
 @keyframes fadeInDown {
