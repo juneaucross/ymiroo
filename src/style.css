@@ -17,6 +17,11 @@
   }
 }
 
+:root {
+  /* --bgColor: #3C3C3C; */
+  --bgColor: #DBDBDB;
+}
+
 @keyframes fadeInDown {
   from {
     opacity: 0;
@@ -43,8 +48,8 @@
 
 body {
   width: 1440px;
-  background-color: #3C3C3C;
-  /* background-color: #DBDBDB; */
+  background-color: #DBDBDB;
+  background-color: var(--bgColor);
 }
 
 .container {
