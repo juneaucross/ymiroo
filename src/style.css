@@ -1,8 +1,44 @@
+/* reset */
 *,
 *::before,
 *::after {
   box-sizing: border-box;
   margin: 0;
+}
+
+/* animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translate3d(0, -100%, 0);
+  }
+
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    transform: translate3d(-100%, 0, 0);
+  }
+
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
 }
 
 body {
@@ -36,6 +72,25 @@ body {
   list-style: none;
 }
 
+.social__list-item--animation {
+  animation-name: fadeInLeft;
+  animation-duration: 0.8s;
+  animation-timing-function: ease-in;
+  animation-fill-mode: both;
+}
+
+.social__list-item--animation:nth-child(1) {
+  animation-delay: 0.5s;
+}
+
+.social__list-item--animation:nth-child(2) {
+  animation-delay: 0.7s;
+}
+
+.social__list-item--animation:nth-child(3) {
+  animation-delay: 0.9s;
+}
+
 .social__link {
   font-size: 18px;
   line-height: 1.2;
@@ -46,6 +101,14 @@ body {
 
 .content {
   width: 100%;
+}
+
+.content--animation {
+  animation-name: fadeIn;
+  animation-duration: 1s;
+  animation-timing-function: ease-in;
+  animation-delay: 0.3s;
+  animation-fill-mode: both;
 }
 
 .content__text {
@@ -99,6 +162,10 @@ body {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
+  }
+
+  .social__list-item--animation {
+    animation-name: fadeInDown;
   }
 
   .social__link {
