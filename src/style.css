@@ -18,8 +18,7 @@
 }
 
 :root {
-  /* --bgColor: #3C3C3C; */
-  --bgColor: #DBDBDB;
+  --bgColor: #DBDBDB; /* #3C3C3C */
 }
 
 @keyframes fadeInDown {
